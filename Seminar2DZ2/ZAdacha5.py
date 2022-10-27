@@ -15,3 +15,13 @@ list3 = []
 for i in range(1,list_lenght+1):
     list3.append(list[-i])
 print(f'Список перевёрнутый: {list3}')
+
+
+#2
+
+
+import random
+x = list(range(0,9))
+print(x)
+random.shuffle(x)
+print(x)

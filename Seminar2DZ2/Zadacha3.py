@@ -6,5 +6,18 @@
 # 3 -> 6.62037037037037
 
 n = int(input('Введите число :'))
-liist = [round((1+1/n)**n, 15) for n in range(1, n+1)]
+list = [round((1+1/n)**n, 15) for n in range(1, n+1)]
 print(f'Сумма: {round(sum(list), 15)}')
+
+
+
+#2 
+
+n = int(input('Введите число :'))
+d= {}
+sum = 0
+for i in range(1, n+1):
+    d[i] = round((1+1/i)**i, 15)
+    sum+=d[i]
+print(d)
+print(round(sum,2))

@@ -17,9 +17,26 @@
 
 # 2 вариант
 
-num = input('Введите число: ')
+# from re import A
+
+
+# num = input('Введите число: ')
+# sum = 0
+# for i in num:
+#     if i != '.':
+#         sum += int(i)
+# print(sum)
+
+
+
+# 3
+
+a = input('Введите число: ')
+a = a.replace('-','')
+a = a.replace('.','')
+a = a.replace(',','')
+b = list(a)
 sum = 0
-for i in num:
-    if i != '.':
-        sum += int(i)
+for i in b:
+    sum+=int(i)
 print(sum)
